@@ -35,6 +35,14 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+:root{
+  --SmokedWhite:#f9fafb;
+  --DarkerWhite:#fffefe;
+  --White: #ffffff;
+  --Green: #596d48;
+  --Blue: #6989e2;
+  --Red:#c13636;
+}
 #leftSide{
     background-image: url("background.jpg");
     background-size: cover;
@@ -52,6 +60,8 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     background-color: red;
     display: flex;
+    flex-direction: column;
+    background-color: var(--SmokedWhite);
 }
 #body{
     display: flex;
@@ -77,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 #credits{
     color: white;
     text-align: center;
+    font-family: sans-serif;
     a{
       color: inherit;
     }
