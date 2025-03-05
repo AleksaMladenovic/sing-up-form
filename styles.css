@@ -180,3 +180,14 @@ button{
   width: 240px;
   height: 48px;
 }
+
+#divLogIn{
+  padding-left: 2.5%;
+  font-family: sans-serif;
+
+  a{
+    color:var(--Green);
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
