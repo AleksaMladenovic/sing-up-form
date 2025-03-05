@@ -179,6 +179,7 @@ button{
   border: none;
   width: 240px;
   height: 48px;
+  cursor: pointer;
 }
 
 #divLogIn{
