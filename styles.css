@@ -137,7 +137,9 @@ form{
 }
 input{
   border: 1px solid grey;
-  height: 30px;
+  height: 32px;
+  font-size: 20px;
+  font-family: sans-serif;
   border-radius: 5px;
   background-color: var(--DarkerWhite);
   width: 100%;
@@ -152,7 +154,7 @@ input:required:invalid ~ span::before{
   font-weight: bold;
   font-size: 30px;
   right: 6px;
-  top: -10px;
+  top: -12px;
 }
 input:focus{
   border:2px solid var(--Blue);
