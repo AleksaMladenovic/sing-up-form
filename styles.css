@@ -198,6 +198,5 @@ button{
 }
 
 #rightSide{
-  justify-content: center;
-  gap:3vh;
+  padding-top: 10vh;
 }
