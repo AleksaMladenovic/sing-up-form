@@ -44,11 +44,15 @@ h1, h2, h3, h4, h5, h6 {
   --Red:#c13636;
   --FieldFontColor: #5a626c;
   --FormTitleColor: #545f70;
+  --BackgroundRatio : calc(1862/2792);
+  --LeftSideWidth:clamp(1px,40vw,100vh*var(--BackgroundRatio));
+  --RigthSideWidth : calc(100vw - var(--LeftSideWidth));
 }
 #leftSide{
     background-image: url("background.jpg");
-    background-size: cover;
-    width: 30%;
+    background-size:cover;
+    background-position: center;
+    width: var(--LeftSideWidth);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #rightSide{
-    width: 70%;
+    width: var(--RigthSideWidth);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -191,4 +195,9 @@ button{
     font-weight: bold;
     text-decoration: none;
   }
+}
+
+#rightSide{
+  justify-content: center;
+  gap:3vh;
 }
