@@ -42,6 +42,8 @@ h1, h2, h3, h4, h5, h6 {
   --Green: #596d48;
   --Blue: #6989e2;
   --Red:#c13636;
+  --FieldFontColor: #5a626c;
+  --FormTitleColor: #545f70;
 }
 #leftSide{
     background-image: url("background.jpg");
@@ -58,9 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 #rightSide{
     width: 70%;
     height: 100vh;
-    background-color: red;
     display: flex;
     flex-direction: column;
+    gap:20px;
     background-color: var(--SmokedWhite);
 }
 #body{
@@ -91,4 +93,70 @@ h1, h2, h3, h4, h5, h6 {
     a{
       color: inherit;
     }
+}
+
+#longerText{
+  
+}
+
+#divForm{
+  background-color: var(--White);
+  box-shadow: 0px 3px 7px grey ;
+  padding: 10px 2.5%;
+  h1{
+    color:var(--FormTitleColor);
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+label{
+  font-family: monospace;
+  color: var(--FieldFontColor);
+  font-weight: 600;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  width: max(25%, 200px);
+  flex: none;
+  margin-bottom: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  gap:5%
+}
+input{
+  border: 1px solid grey;
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--DarkerWhite);
+  width: 100%;
+}
+span{
+  position: relative;
+}
+input:required:invalid ~ span::before{
+  position: absolute;
+  color: red;
+  content: "*";
+  font-weight: bold;
+  font-size: 30px;
+  right: 6px;
+  top: -10px;
+}
+input:focus{
+  border:2px solid var(--Blue);
+  box-shadow: none;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 3px grey;
+}
+input:user-invalid{
+  border:2px solid var(--Red);
 }

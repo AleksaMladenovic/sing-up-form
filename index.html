@@ -1,65 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sing up</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="body">
-        <div id="leftSide">
-            <div id="logo">
-                <img src="odin-lined.png">
-                <span>odin</span>
-            </div>
-            <div id="credits">
-                Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a>
-            </div>
+      <div id="leftSide">
+        <div id="logo">
+          <img src="odin-lined.png" />
+          <span>odin</span>
         </div>
-        <div id="rightSide">
-            <div id="longerText">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio impedit odio earum minus. A, eum fugiat. Quisquam aspernatur rem ea voluptates aut similique rerum, corporis praesentium et, officiis quis beatae.
-            </div>
-            <div id="shorterText">
-                You know you want;
-            </div>
-            <div id="divForm">
-                <h1>Let's do this!</h1>
-                <form action="" method="get" id="form1">
-                    <div class="field">
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" name="firstName">
-                    </div>
-                    <div class="field">
-                        <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
-                    </div>
-                    <div class="field">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="field">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phoneNumber">
-                    </div>
-                    <div class="field">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
-                    </div>
-                    <div class="field">
-                        <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
-                    </div>
-                </form>
-            </div>
-            <div id="divButton">
-                <button type="submit" form="form1">Create Account</button>
-            </div>
-            <div id="divLogIn">
-                Already have an account? <a href="#">Log in</a>
-            </div>
+        <div id="credits">
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
         </div>
-    </div>  
-</body>
+      </div>
+      <div id="rightSide">
+        <div id="longerText">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+          impedit odio earum minus. A, eum fugiat. Quisquam aspernatur rem ea
+          voluptates aut similique rerum, corporis praesentium et, officiis quis
+          beatae.
+        </div>
+        <div id="shorterText">You know you want;</div>
+        <div id="divForm">
+          <h1>Let's do this!</h1>
+          <form action="" method="get" id="form1">
+            <div class="row">
+              <div class="field">
+                <label for="firstName">FIRST NAME</label>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                  /><span></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="lastName">LAST NAME</label>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                  /><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="email">EMAIL</label>
+                <div class="input">
+                  <input type="email" id="email" name="email" /><span></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="phone">PHONE NUMBER</label>
+                <div class="input">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phoneNumber"
+                  /><span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="password">PASSWORD</label>
+                <div class="input">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                  /><span></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <div class="input">
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                  /><span></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div id="divButton">
+          <button type="submit" form="form1">Create Account</button>
+        </div>
+        <div id="divLogIn">Already have an account? <a href="#">Log in</a></div>
+      </div>
+    </div>
+  </body>
 </html>
